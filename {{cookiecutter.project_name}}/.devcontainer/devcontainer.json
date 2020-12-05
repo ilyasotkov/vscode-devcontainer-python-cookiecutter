@@ -1,0 +1,23 @@
+{
+  "name": "${localWorkspaceFolderBasename}",
+  "build": {
+    "dockerfile": "../src/Dockerfile",
+    "context": "../src",
+    "target": "devcontainer"
+  },
+  "shutdownAction": "stopContainer",
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+  "remoteEnv": {
+    "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+  },
+  "extensions": [
+    "foxundermoon.shell-format",
+    "mads-hartmann.bash-ide-vscode",
+    "ms-azuretools.vscode-docker",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "njpwerner.autodocstring",
+    "visualstudioexptteam.vscodeintellicode"
+  ]
+}
