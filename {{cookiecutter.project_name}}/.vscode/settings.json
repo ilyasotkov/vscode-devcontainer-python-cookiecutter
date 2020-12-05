@@ -35,14 +35,20 @@
   },
   "python.pythonPath": "/usr/local/bin/python3",
   "python.formatting.provider": "black",
-  "python.languageServer": "Pylance",
-  "python.analysis.typeCheckingMode": "basic",
-  "python.analysis.autoImportCompletions": false,
-  "python.envFile": "${workspaceFolder}/src/.env",
   "python.formatting.blackArgs": [
     "--line-length",
     "100"
   ],
+  "python.sortImports.args": [
+    "--project={{cookiecutter.python_package_name}}"
+  ],
+  "python.analysis.extraPaths": [
+    "/usr/local/lib/python3.8/site-packages"
+  ],
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": false,
+  "python.envFile": "${workspaceFolder}/src/.env",
   "python.linting.enabled": true,
   "python.linting.lintOnSave": true,
   "python.linting.pylintEnabled": true,
@@ -52,13 +58,6 @@
   "python.linting.pylintUseMinimalCheckers": false,
   "python.testing.pytestEnabled": true,
   "python.testing.autoTestDiscoverOnSaveEnabled": true,
-  "python.analysis.extraPaths": [
-    "/usr/local/lib/python3.8/site-packages",
-    "src/{{cookiecutter.python_package_name}}"
-  ],
-  "python.sortImports.args": [
-    "--project={{cookiecutter.python_package_name}}"
-  ],
   "autoDocstring.docstringFormat": "sphinx",
   "autoDocstring.customTemplatePath": "/workspace/.vscode/docstring.mustache",
   // Shell
