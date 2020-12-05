@@ -43,7 +43,7 @@
     "--project={{cookiecutter.python_package_name}}"
   ],
   "python.analysis.extraPaths": [
-    "/usr/local/lib/python3.8/site-packages"
+    "/usr/local/lib/python{{cookiecutter.python_version}}/site-packages"
   ],
   "python.languageServer": "Pylance",
   "python.analysis.typeCheckingMode": "basic",
