@@ -22,7 +22,7 @@ updates:
   reviewers:
   - ilyasotkov
 
-- directory: /{{cookiecutter.project_name}}/src/Dockerfile
+- directory: /{{cookiecutter.project_name}}/src
   package-ecosystem: docker
   schedule:
     interval: daily
