@@ -1,5 +1,5 @@
 # Base
-FROM python:3.8-slim-buster AS base
+FROM python:3.9.0-slim-buster AS base
 WORKDIR /workspace
 COPY pip.conf /etc/
 COPY requirements.txt .
