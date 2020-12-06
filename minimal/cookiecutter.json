@@ -3,6 +3,6 @@
     ".vscode/docstring.mustache"
   ],
   "project_name": "learning-python-with-vscode",
-  "python_package_name": "{{ cookiecutter.project_name | lower | replace('-', '_') }}",
+  "python_package_name": "{{cookiecutter.project_name | lower | replace('-', '_')}}",
   "python_version": "3.8"
 }
