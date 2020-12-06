@@ -1,0 +1,17 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Profile main.py",
+      "type": "shell",
+      "command": "viztracer ./src/{{cookiecutter.python_package_name}}/main.py && echo $LOCAL_WORKSPACE_FOLDER/result.html",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
