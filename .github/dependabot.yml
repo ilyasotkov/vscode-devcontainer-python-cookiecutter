@@ -1,23 +1,18 @@
 version: 2
 
 updates:
+
 - directory: /
   package-ecosystem: pip
   schedule:
     interval: daily
-  reviewers:
-  - ilyasotkov
-
-- directory: /{{cookiecutter.project_name}}/src
-  package-ecosystem: pip
-  schedule:
-    interval: daily
-  reviewers:
-  - ilyasotkov
 
 - directory: /
   package-ecosystem: github-actions
   schedule:
     interval: daily
-  reviewers:
-  - ilyasotkov
+
+- directory: /minimal/{{cookiecutter.project_name}}/src
+  package-ecosystem: pip
+  schedule:
+    interval: daily

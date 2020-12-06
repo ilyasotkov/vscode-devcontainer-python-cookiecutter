@@ -1,5 +1,3 @@
-name: CI tests
-
 on:
   push:
     branches:
@@ -14,6 +12,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        template:
+        - minimal
         python:
         - "3.7"
         - "3.8"
@@ -30,5 +30,6 @@ jobs:
       run: |
         pip install --upgrade pip
         pip install -r requirements.txt
-    - name: Test build
+    - name: Test ${{ matrix.template }} cookiecutter template
+      working-directory: ${{ matrix.template }}
       run: ./scripts/test.sh
