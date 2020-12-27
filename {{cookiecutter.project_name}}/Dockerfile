@@ -1,7 +1,7 @@
 # Base
 FROM python:{{cookiecutter.python_version}}-slim-buster AS base
 WORKDIR /workspace
-ENV PYTHONPATH /workspace/src
+ENV PYTHONPATH /workspace
 COPY pip.conf /etc/
 COPY requirements.txt .
 RUN pip install -r requirements.txt

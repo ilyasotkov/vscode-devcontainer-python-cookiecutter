@@ -48,7 +48,7 @@
   "python.languageServer": "Pylance",
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": false,
-  "python.envFile": "${workspaceFolder}/src/.env",
+  "python.envFile": "${workspaceFolder}/.env",
   "python.linting.enabled": true,
   "python.linting.lintOnSave": true,
   "python.linting.pylintEnabled": true,
