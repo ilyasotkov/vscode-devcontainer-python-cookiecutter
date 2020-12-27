@@ -19,7 +19,7 @@ RUN pip install -r requirements-test.txt
 # Test image
 FROM testbase AS test
 COPY . .
-ENTRYPOINT ["pytest", "./{{cookiecutter.python_package_name}}/test"]
+ENTRYPOINT ["pytest", "./{{cookiecutter.python_package_name}}/tests"]
 
 # VS Code Dev Container image
 FROM testbase AS devcontainer
@@ -40,5 +40,5 @@ RUN curl -L -o shfmt \
         && chmod 0700 shfmt \
         && mv shfmt /usr/bin
 
-COPY requirements-devcontainer.txt .
-RUN pip install -r requirements-devcontainer.txt
+COPY requirements-dev.txt .
+RUN pip install -r requirements-dev.txt

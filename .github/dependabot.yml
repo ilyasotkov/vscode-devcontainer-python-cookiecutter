@@ -12,7 +12,7 @@ updates:
   schedule:
     interval: daily
 
-- directory: /{{cookiecutter.project_name}}/src
+- directory: /{{cookiecutter.project_name}}/
   package-ecosystem: pip
   schedule:
     interval: daily

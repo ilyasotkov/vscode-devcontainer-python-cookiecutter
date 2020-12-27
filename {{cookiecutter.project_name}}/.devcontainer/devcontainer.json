@@ -2,7 +2,7 @@
   "name": "${localWorkspaceFolderBasename}",
   "build": {
     "dockerfile": "../src/Dockerfile",
-    "context": "../src",
+    "context": "..",
     "target": "devcontainer"
   },
   "shutdownAction": "stopContainer",
