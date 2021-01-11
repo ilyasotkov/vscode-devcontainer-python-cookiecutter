@@ -1,4 +1,4 @@
-# python-vscode-devcontainer-bootstrap
+# vscode-devcontainer-python-cookiecutter
 
 This cookiecutter template generates code for a basic Python project in a Visual Studio Code Dev Container (devcontainer) environment.
 
