@@ -1,0 +1,2 @@
+**/.devcontainer/*.json linguist-language=JSON-with-Comments
+**/.vscode/*.json linguist-language=JSON-with-Comments
