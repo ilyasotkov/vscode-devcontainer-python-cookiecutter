@@ -3,7 +3,7 @@ pull_request_rules:
   conditions:
     - base=main
     - author~=^dependabot(|-preview)\[bot\]$
-    - check-success=build
+    - check-success~=build \(3\.\d+\)$
   actions:
     merge:
       method: merge
