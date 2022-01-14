@@ -12,3 +12,4 @@ cookiecutter .. \
 
 cd $(cat ../cookiecutter.json | jq -r ".project_name")
 ls -alh
+docker run -t $(docker build -q . --target test)
