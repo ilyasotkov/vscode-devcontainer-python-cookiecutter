@@ -1,4 +1,4 @@
-pylint==2.12.2
+pylint==2.13.0
 black==22.1.0
 rope==0.23.0
 debugpy==1.6.0
