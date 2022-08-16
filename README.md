@@ -35,4 +35,4 @@ Read more about the [devcontainer CLI](https://code.visualstudio.com/docs/remote
 
 ## Known issues
 
-- If IntelliSense features don't work after opening your dev container, run "Developer: Reload Window" from VS Code Command Palette.
+- If IntelliSense features don't work after opening your dev container, run "Developer: Reload Window" from VS Code Command Palette. See https://github.com/microsoft/vscode/issues/149309
