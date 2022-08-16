@@ -13,7 +13,7 @@ Open the generated folder in VS Code, and you'll be prompted to re-open in Dev C
 Or, after running "Remote-Containers: Install devcontainer CLI" from VS Code Command Palette, run
 
 ```sh
-devcontainers open <PROJECT_NAME>
+devcontainer open <PROJECT_NAME>
 ```
 
 Read more about the [devcontainer CLI](https://code.visualstudio.com/docs/remote/devcontainer-cli)
