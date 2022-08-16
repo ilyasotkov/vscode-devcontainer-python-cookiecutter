@@ -1,5 +1,4 @@
 {
-  "terminal.integrated.shell.linux": "/bin/bash",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
@@ -33,7 +32,7 @@
       "source.organizeImports": true
     }
   },
-  "python.pythonPath": "/usr/local/bin/python3",
+  "python.defaultInterpreterPath": "/usr/local/bin/python3",
   "python.formatting.provider": "black",
   "python.formatting.blackArgs": [
     "--line-length",
@@ -55,29 +54,30 @@
   "python.linting.pylintArgs": [
     "--load-plugins=pylint_pytest"
   ],
-  "python.linting.pylintUseMinimalCheckers": false,
+  "python.testing.pytestArgs": [
+    "-s", // Necessary so that stdout works in debug console
+  ],
   "python.testing.pytestEnabled": true,
   "python.testing.autoTestDiscoverOnSaveEnabled": true,
-  "autoDocstring.docstringFormat": "sphinx",
-  "autoDocstring.customTemplatePath": "/workspace/.vscode/docstring.mustache",
-  // Shell
-  "[shellscript]": {
-    "editor.formatOnSave": true
-  },
-  // Dockerfile
-  "[dockerfile]": {
-    "editor.quickSuggestions": {
-      "strings": true
-    },
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker",
-    "editor.formatOnSave": true,
-    "editor.tabSize": 8,
-    "editor.detectIndentation": false
-  },
-  "shellformat.path": "/usr/bin/shfmt",
-  "shellformat.flag": "-sr -ci -kp",
-  "shellformat.effectLanguages": [
-    "shellscript",
-    "dotenv"
-  ]
+  "autoDocstring.docstringFormat": "sphinx-notypes",
+  // // Shell
+  // "[shellscript]": {
+  //   "editor.formatOnSave": true
+  // },
+  // // Dockerfile
+  // "[dockerfile]": {
+  //   "editor.quickSuggestions": {
+  //     "strings": true
+  //   },
+  //   "editor.defaultFormatter": "ms-azuretools.vscode-docker",
+  //   "editor.formatOnSave": true,
+  //   "editor.tabSize": 8,
+  //   "editor.detectIndentation": false
+  // },
+  // "shellformat.path": "/usr/bin/shfmt",
+  // "shellformat.flag": "-sr -ci -kp",
+  // "shellformat.effectLanguages": [
+  //   "shellscript",
+  //   "dotenv"
+  // ]
 }
