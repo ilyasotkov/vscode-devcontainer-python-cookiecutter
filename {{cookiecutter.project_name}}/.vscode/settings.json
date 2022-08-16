@@ -60,24 +60,4 @@
   "python.testing.pytestEnabled": true,
   "python.testing.autoTestDiscoverOnSaveEnabled": true,
   "autoDocstring.docstringFormat": "sphinx-notypes",
-  // // Shell
-  // "[shellscript]": {
-  //   "editor.formatOnSave": true
-  // },
-  // // Dockerfile
-  // "[dockerfile]": {
-  //   "editor.quickSuggestions": {
-  //     "strings": true
-  //   },
-  //   "editor.defaultFormatter": "ms-azuretools.vscode-docker",
-  //   "editor.formatOnSave": true,
-  //   "editor.tabSize": 8,
-  //   "editor.detectIndentation": false
-  // },
-  // "shellformat.path": "/usr/bin/shfmt",
-  // "shellformat.flag": "-sr -ci -kp",
-  // "shellformat.effectLanguages": [
-  //   "shellscript",
-  //   "dotenv"
-  // ]
 }

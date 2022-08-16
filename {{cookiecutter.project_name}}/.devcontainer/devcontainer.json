@@ -11,9 +11,6 @@
     "ms-python.python",
     "ms-python.vscode-pylance",
     "njpwerner.autodocstring",
-    // "foxundermoon.shell-format",
-    // "mads-hartmann.bash-ide-vscode",
-    // "ms-azuretools.vscode-docker",
   ],
   "runArgs": [
     "--cap-add=SYS_PTRACE",
