@@ -14,7 +14,8 @@
         "ms-python.vscode-pylance",
         "njpwerner.autodocstring",
         "ms-python.black-formatter",
-        "ms-python.pylint"
+        "ms-python.pylint",
+        "ms-python.isort"
       ]
     }
   },
