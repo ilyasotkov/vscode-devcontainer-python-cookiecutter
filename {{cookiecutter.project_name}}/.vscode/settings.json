@@ -33,6 +33,10 @@
     }
   },
   "python.defaultInterpreterPath": "/usr/local/bin/python3",
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": false,
   "python.analysis.extraPaths": [
     "/usr/local/lib/python{{cookiecutter.python_version}}/site-packages"
   ],
@@ -41,17 +45,15 @@
   ],
   "python.testing.pytestEnabled": true,
   "python.testing.autoTestDiscoverOnSaveEnabled": true,
+  "black-formatter.importStrategy": "fromEnvironment",
   "black-formatter.args": [
     "--line-length",
     "100"
   ],
+  "isort.importStrategy": "fromEnvironment",
   "isort.args": [
     "--project=python_with_vscode"
   ],
-  "python.languageServer": "Pylance",
-  "python.analysis.typeCheckingMode": "basic",
-  "python.analysis.autoImportCompletions": false,
-  "python.envFile": "${workspaceFolder}/.env",
   "pylint.importStrategy": "fromEnvironment",
   "pylint.args": [
     "--load-plugins=pylint_pytest"
