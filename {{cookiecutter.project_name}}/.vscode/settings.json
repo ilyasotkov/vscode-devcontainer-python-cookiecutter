@@ -29,35 +29,34 @@
     "editor.insertSpaces": true,
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     }
   },
   "python.defaultInterpreterPath": "/usr/local/bin/python3",
-  "python.formatting.provider": "black",
-  "python.formatting.blackArgs": [
-    "--line-length",
-    "100"
-  ],
-  "python.sortImports.args": [
-    "--project={{cookiecutter.python_package_name}}"
-  ],
-  "python.analysis.extraPaths": [
-    "/usr/local/lib/python{{cookiecutter.python_version}}/site-packages"
-  ],
+  "python.envFile": "${workspaceFolder}/.env",
   "python.languageServer": "Pylance",
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": false,
-  "python.envFile": "${workspaceFolder}/.env",
-  "python.linting.enabled": true,
-  "python.linting.lintOnSave": true,
-  "python.linting.pylintEnabled": true,
-  "python.linting.pylintArgs": [
-    "--load-plugins=pylint_pytest"
+  "python.analysis.extraPaths": [
+    "/usr/local/lib/python{{cookiecutter.python_version}}/site-packages"
   ],
   "python.testing.pytestArgs": [
     "-s", // Necessary so that stdout works in debug console
   ],
   "python.testing.pytestEnabled": true,
   "python.testing.autoTestDiscoverOnSaveEnabled": true,
+  "black-formatter.importStrategy": "fromEnvironment",
+  "black-formatter.args": [
+    "--line-length",
+    "100"
+  ],
+  "isort.importStrategy": "fromEnvironment",
+  "isort.args": [
+    "--project=python_with_vscode"
+  ],
+  "pylint.importStrategy": "fromEnvironment",
+  "pylint.args": [
+    "--load-plugins=pylint_pytest"
+  ],
   "autoDocstring.docstringFormat": "sphinx-notypes",
 }

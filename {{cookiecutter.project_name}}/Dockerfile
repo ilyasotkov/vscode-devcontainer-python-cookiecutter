@@ -1,5 +1,5 @@
 # Base
-FROM python:{{cookiecutter.python_version}}-slim-buster AS base
+FROM python:{{cookiecutter.python_version}}-slim-bullseye AS base
 WORKDIR /workspace
 ENV PYTHONPATH /workspace
 COPY pip.conf /etc/
