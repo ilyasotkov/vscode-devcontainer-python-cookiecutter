@@ -1,1 +1,1 @@
-cookiecutter==2.7.0
+cookiecutter==2.7.1
